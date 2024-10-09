@@ -1,0 +1,265 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilo del header */
+header {
+    background-color: #333;
+    color: white;
+    position: relative; /* Para posicionar elementos dentro del header */
+    overflow: hidden; /* Para ocultar cualquier desbordamiento de la imagen */
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block; /* Asegura que la imagen no tenga espacio debajo */
+}
+
+/* Estilo de la navegación */
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Añadir padding para los botones */
+    box-sizing: border-box;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Efecto de transición para el color */
+}
+
+header nav ul li a:hover {
+    color: #ff4500; /* Cambia el color al pasar el ratón */
+}
+
+header nav a img {
+    width: 150px;
+}
+
+/* Hero section */
+#hero {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 50px;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#hero h2 {
+    font-size: 2.5rem; /* Aumentar el tamaño del texto */
+    margin-bottom: 10px;
+}
+
+#hero h1 {
+    font-size: 1.8rem; /* Aumentar el tamaño del texto */
+    margin-bottom: 20px;
+}
+
+#hero button {
+    padding: 15px 30px; /* Aumentar el padding */
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Añadir bordes redondeados */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #e03e00;
+}
+
+/* Secciones principales */
+main {
+    padding: 40px;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 2.5rem; /* Aumentar el tamaño del texto */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+article {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+article:hover {
+    transform: scale(1.05); /* Escalar el artículo al pasar el ratón */
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin-top: 15px;
+}
+
+/* Sección de testimonios */
+#testimonios {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Color del texto por defecto (puedes cambiarlo si deseas) */
+    padding: 40px;
+    text-align: center;
+}
+
+#testimonios p {
+    font-style: italic;
+    color: #111111; /* Cambiar a un tono claro para mayor contraste */
+}
+
+#testimonios h3 {
+    margin-top: 10px;
+    color: #ff4500; /* Un color más brillante para los nombres, opcional */
+}
+
+
+/* Sección de membresías */
+/* Sección de membresías */
+#membresias {
+    padding: 40px;
+}
+
+#membresias .fila {
+    display: flex; /* Usar flexbox para alinear los artículos */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap; /* Permitir que los artículos se ajusten */
+}
+
+#membresias article {
+    background-color: #eaeaea;
+    padding: 20px;
+    margin: 10px; /* Espacio entre artículos */
+    text-align: center; /* Centrar el texto dentro del artículo */
+    width: calc(30% - 20px); /* Ajustar ancho para dejar espacio entre artículos */
+}
+
+#membresias article h3 {
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+#membresias article p {
+    margin: 0; /* Quitar márgenes del párrafo */
+}
+
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0; /* Espaciado en los párrafos del footer */
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 40px;
+    background-color: #f9f9f9; /* Color de fondo para la sección de contacto */
+    text-align: center; /* Centrar texto */
+}
+
+#contacto h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#contacto form {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar formulario en la página */
+    background-color: #fff; /* Fondo blanco para el formulario */
+    border: 1px solid #ddd; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#contacto .fila {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los campos */
+    margin-bottom: 15px; /* Espacio entre las filas */
+}
+
+#contacto input,
+#contacto select,
+#contacto textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Espacio en la parte superior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+#contacto textarea {
+    height: 100px; /* Altura fija para el área de texto */
+}
+
+#contacto button {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #ff4500; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+#contacto button:hover {
+    background-color: #e03e00; /* Color de fondo al pasar el ratón */
+}
